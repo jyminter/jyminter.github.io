@@ -1,0 +1,89 @@
+<!-- dontscroll(그만봐) 앱 소개·다운로드 랜딩 페이지 (GitHub Pages 루트) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Don't Scroll — Block the bedtime scroll</title>
+  <meta name="description" content="Don't Scroll (그만봐) helps you stop the late-night scroll. Lock distracting apps during your bedtime hours and sleep better." />
+  <style>
+    :root {
+      --bg: #0e1020;
+      --card: #171a2e;
+      --text: #edeff7;
+      --muted: #9a9eb6;
+      --lavender: #b9a7ff;
+      --lavender-strong: #8b7cf6;
+      --hairline: rgba(255,255,255,0.08);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple SD Gothic Neo", sans-serif;
+      background: radial-gradient(120% 80% at 50% -10%, #1b1f3a 0%, var(--bg) 55%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 24px;
+      line-height: 1.6;
+    }
+    .wrap { width: 100%; max-width: 560px; text-align: center; }
+    .moon { font-size: 56px; margin-bottom: 16px; }
+    h1 { font-size: 40px; font-weight: 800; letter-spacing: -0.5px; }
+    .ko { color: var(--lavender); font-weight: 700; }
+    .tagline { font-size: 18px; color: var(--muted); margin-top: 10px; }
+    .desc { font-size: 16px; color: var(--muted); margin-top: 24px; }
+    .features {
+      list-style: none; margin: 28px auto 0; max-width: 380px; text-align: left;
+    }
+    .features li {
+      padding: 10px 0; border-bottom: 1px solid var(--hairline);
+      display: flex; align-items: center; gap: 12px; font-size: 15px;
+    }
+    .features li:last-child { border-bottom: none; }
+    .check { color: var(--lavender-strong); font-weight: 800; }
+    .cta {
+      display: inline-block; margin-top: 36px; padding: 15px 30px;
+      background: var(--lavender); color: #11132a; font-weight: 700; font-size: 16px;
+      border-radius: 14px; text-decoration: none;
+      transition: transform .15s ease, opacity .15s ease;
+    }
+    .cta:hover { transform: translateY(-1px); opacity: .92; }
+    footer {
+      margin-top: 44px; font-size: 13px; color: var(--muted);
+      display: flex; flex-wrap: wrap; gap: 8px 16px; justify-content: center;
+    }
+    footer a { color: var(--muted); text-decoration: none; border-bottom: 1px solid var(--hairline); }
+    footer a:hover { color: var(--text); }
+    .copyright { width: 100%; margin-top: 14px; color: #6b6f87; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="moon">🌙</div>
+    <h1>Don't Scroll <span class="ko">그만봐</span></h1>
+    <p class="tagline">Block the bedtime scroll. Sleep better.</p>
+
+    <p class="desc">
+      Lock the apps that keep you up — Instagram, YouTube, TikTok — during your
+      bedtime hours, so you can actually fall asleep instead of doomscrolling.
+    </p>
+
+    <ul class="features">
+      <li><span class="check">✓</span> Schedule lock hours for distracting apps</li>
+      <li><span class="check">✓</span> A calm sleep screen with soothing sounds</li>
+      <li><span class="check">✓</span> Build a streak of scroll-free nights</li>
+    </ul>
+
+    <a class="cta" href="https://apps.apple.com/app/id6781255206">Download on the App Store</a>
+
+    <footer>
+      <a href="https://jyminter.github.io/privacy-policy">Privacy Policy</a>
+      <a href="mailto:jyminter@gmail.com">Support</a>
+      <span class="copyright">© 2026 Don't Scroll · 그만봐</span>
+    </footer>
+  </main>
+</body>
+</html>
